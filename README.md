@@ -1,4 +1,4 @@
 # DEPI-Project
 DEPI Final Project
 
-Book Swap Website
+ E-Commerce Website
