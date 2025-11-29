@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+}
+:root {
+    --color-primary: #008ECC;
+    --bg-primary: #008ECC;
+}
+.color-primary {
+    color: var(--color-primary):
+}
+.bg-color-primary {
+    background: var(--color-primary):
+    transition: linear 0.3s;
+    &:hover {
+      background-color: #0d6efd;
+    }
+}
+.more-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  outline: none;
+  text-decoration: none;
+    background: var(--bg-primary);
+    cursor: pointer;
+    transition: linear 0.3s; 
+    &:hover {
+      background: #0d6efd;
+    }
+}
+.more-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  outline: none;
+  text-decoration: none;
+    background: var(--bg-primary);
+    cursor: pointer;
+    transition: linear 0.3s; 
+    &:hover {
+      background: #0178acff;
+    }
+}
+nav {
+  width: 100%;
+}
+.middle-position {
+    transform: translate(-50%, -50%);
+}
+.cartBtn {
+    all: unset;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.product-item .card, .view-card-icon {
+    transition: linear 0.3s;
+}
+.product-item .card:hover {
+    transform: translateY(-15px)
+}
+.product-item .card:hover .view-card-icon {
+    right: 10px !important;
+}
+.border-primary {
+    border-color: var(--color-primary) !important;
+}
+.border-card {
+    border: solid 1px #EDEDED !important;
+}
+
+footer .social-contact svg {
+  transition: 0.3s linear;
+  &:hover {
+    color: var(--color-primary)
+  }
+}

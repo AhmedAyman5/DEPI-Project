@@ -1,0 +1,25 @@
+.review-order-card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.review-order-card .card-header {
+  border-bottom: none;
+}
+
+.review-item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.btn-lg {
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-lg:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}

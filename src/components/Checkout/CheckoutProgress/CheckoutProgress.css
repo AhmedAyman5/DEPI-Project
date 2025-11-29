@@ -1,0 +1,61 @@
+.checkout-progress {
+  padding: 2rem 0;
+}
+
+.progress-line, .progress-fill {
+  height: 3px;
+  top: 30px;
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.progress-line {
+  left: 50px;
+  right: 50px;
+  background-color: #e9ecef;
+}
+
+.progress-fill {
+  left: 50px;
+  background-color: #198754;
+  z-index: 2;
+  transition: right 0.4s ease-in-out;
+}
+
+.step-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.step-circle {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  border: 3px solid white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.step-circle:not(:disabled):hover {
+  transform: scale(1.1);
+}
+
+.step-circle:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .step-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  .progress-line, .progress-fill {
+    top: 25px;
+  }
+}
